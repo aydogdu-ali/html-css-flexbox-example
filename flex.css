@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 0.3rem;
+  display: flex;
+  width: 100%;
+
+  justify-content: center;
+  align-items: center;
+}
+.logo,
+.navbar,
+.social {
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+.logo {
+  background-color: var(--gri-8);
+  box-shadow: var(--açık-gölge);
+}
+
+.logo img {
+  width: 40px;
+}
+
+.navbar {
+  text-align: center;
+  background-color: var(--mavi-10);
+  box-shadow: var(--koyu-golge);
+  border-radius: 10px;
+}
+
+.navbar .item {
+  display: inline-block;
+  text-decoration: none;
+  padding: 16px;
+  color: var(--siyah);
+  transition: background-color 1s, color 1s;
+}
+
+.item:hover {
+  background-color: var(--mavi-6);
+  border-radius: 10px;
+  color: var(--beyaz);
+}
+
+.social {
+  text-align: right;
+  padding-right: 0.5rem;
+  background-color: var(--mavi-7);
+  box-shadow: var(--acik-golge);
+}
+
+.social i {
+  color: var(--siyah);
+  font-size: 40px;
+  transition: font-size 0.5s;
+}
+.social i:hover {
+  font-size: 50px;
+}
